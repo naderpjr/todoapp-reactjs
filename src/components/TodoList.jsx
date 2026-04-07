@@ -1,13 +1,9 @@
 import React from 'react'
 import TodoCard from './TodoCard'
 
-const TodoList = () => {
+const TodoList = (props) => {
 
-    let todos = [
-        'Go to the gym',
-        'Go to the supermarket',
-        'Go to the park',
-    ]
+    const { todos } = props;
 
     return (
         <ul className='main'>
